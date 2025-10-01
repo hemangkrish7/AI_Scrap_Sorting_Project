@@ -6,10 +6,17 @@ This project is an end-to-end machine learning pipeline that simulates the real-
 
 ---
 
+---
+
 ## Dataset
 
-* [cite_start]**Dataset Used**: The project utilizes the **TrashNet** dataset. [cite: 1, 31]
-* **Reasoning**: This dataset was chosen because it contains thousands of images across 6 relevant classes of materials (cardboard, glass, metal, paper, plastic, trash), which perfectly aligns with the project's scrap-sorting theme. [cite_start]The data is pre-sorted into folders by class, making it ideal for image classification tasks. [cite: 1, 31]
+This project uses the **TrashNet** dataset, created by Gary Thung and Mindy Yang. It contains thousands of images of trash, sorted into different material classes.
+
+The dataset can be found on platforms like GitHub and Kaggle.
+
+* **Original Source:** [TrashNet on GitHub](https://github.com/garythung/trashnet)
+
+
 
 ---
 
