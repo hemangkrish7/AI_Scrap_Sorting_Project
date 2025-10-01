@@ -4,7 +4,6 @@
 
 This project is an end-to-end machine learning pipeline that simulates the real-time classification of scrap materials from images. The goal was to build a complete system, from data preparation and model training to lightweight deployment and a final "conveyor belt" simulation, demonstrating a full model lifecycle.
 
----
 
 ---
 
