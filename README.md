@@ -22,13 +22,13 @@ The dataset can be found on platforms like GitHub and Kaggle.
 ## Model Architecture
 
 * **Base Model**: The classification model is built using a **MobileNetV2** architecture, pre-trained on the ImageNet dataset.
-* [cite_start]**Training Process**: **Transfer learning** was employed to accelerate training and improve performance. [cite: 6] The core convolutional layers of MobileNetV2 were frozen, and a new classification head (a `GlobalAveragePooling2D` layer and a `Dense` layer) was added and trained on the TrashNet data. This process retrains only the final layers of the model to specialize in recognizing our specific scrap classes.
+* **Training Process**: **Transfer learning** was employed to accelerate training and improve performance.  The core convolutional layers of MobileNetV2 were frozen, and a new classification head (a `GlobalAveragePooling2D` layer and a `Dense` layer) was added and trained on the TrashNet data. This process retrains only the final layers of the model to specialize in recognizing our specific scrap classes.
 
 ---
 
 ## Deployment Decisions
 
-[cite_start]For deployment, the model was converted from its original TensorFlow Keras format to the **ONNX (Open Neural Network Exchange)** format. [cite: 6] This was done to create a lightweight, highly optimized, and portable model suitable for fast inference in a real-time application. The ONNX model can be run efficiently on various platforms using the ONNX Runtime.
+For deployment, the model was converted from its original TensorFlow Keras format to the **ONNX (Open Neural Network Exchange)** format.  This was done to create a lightweight, highly optimized, and portable model suitable for fast inference in a real-time application. The ONNX model can be run efficiently on various platforms using the ONNX Runtime.
 
 ---
 
@@ -45,14 +45,14 @@ The dataset can be found on platforms like GitHub and Kaggle.
     cd src
     python simulate.py
     ```
-    [cite_start]The script will classify each image, print the results to the console, and save a `results.csv` file in the `/results` folder. [cite: 6]
+    The script will classify each image, print the results to the console, and save a `results.csv` file in the `/results` folder. 
 
 ---
 
 ## Folder Structure
 
 The project is organized into the following directories as required:
-* [cite_start]`/src`: Contains all source code, including the final `simulate.py` script. [cite: 12]
-* [cite_start]`/data`: Holds the dataset and test images. [cite: 14]
-* [cite_start]`/models`: Stores the trained Keras model and the converted `.onnx` version. [cite: 17]
-* [cite_start]`/results`: Contains the output `results.csv` file from the simulation. [cite: 16]
+* `/src`: Contains all source code, including the final `simulate.py` script. 
+* `/data`: Holds the dataset and test images. 
+* `/models`: Stores the trained Keras model and the converted `.onnx` version. 
+* `/results`: Contains the output `results.csv` file from the simulation. 
