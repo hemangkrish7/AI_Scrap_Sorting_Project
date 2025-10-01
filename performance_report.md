@@ -14,13 +14,14 @@ The following charts summarize the training process and the model's performance 
 
 These plots show the model's accuracy and loss on both the training and validation data over 10 epochs.
 
-*[Insert your screenshot of the accuracy/loss plot here]*
+![Training and validation accuracy and loss plots](./results/training_plots.png)
+
 
 ### Confusion Matrix
 
 This matrix shows the class-by-class performance and highlights which materials the model sometimes confused.
 
-*[Insert your screenshot of the confusion matrix here]*
+![Confusion matrix showing class-by-class performance](./results/confusion_matrix.png)
 
 ---
 
