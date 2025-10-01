@@ -1,0 +1,4 @@
+filename,predicted_class,confidence
+metal10.jpg,glass,0.4688617
+paper20.jpg,paper,0.99006534
+plastic30.jpg,cardboard,0.66142815
